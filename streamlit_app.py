@@ -55,7 +55,7 @@ if ingredients_list:
 
         st.success(name_on_order + ', your Smoothie is ordered!', icon="✅")
 
-        #adding code below
+        ###adding code below
         og_dataset = session.table("smoothies.public.orders")
         edited_dataset = session.create_dataframe(editable_df)
 
@@ -70,7 +70,7 @@ if ingredients_list:
 
     else:
         st.success("There are no pending orders right now", icon='👍')
-
+    ###
 
 
 
